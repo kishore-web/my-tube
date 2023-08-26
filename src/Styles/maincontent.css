@@ -1,21 +1,11 @@
-.main-container {
-  border: 1px solid red;
-  display: flex;
-}
-.left-bar {
-  position: fixed;
-  top: 30px;
-  width: 15vw;
-  bottom: 0;
-  z-index: 10;
-  overflow-y: scroll;
-}
+
 .content-container {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   overflow-y: scroll;
-  margin-left: 16vw;
+  width: 300px;
+
 }
 .content {
   display: flex;

@@ -1,5 +1,98 @@
-.header{
-position: sticky;
-top: 0;
-z-index: 1000;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  cursor: pointer;
+}
+.header-left {
+  align-items: center;
+  display: flex;
+  width: 300px;
+}
+.icon-section {
+  display: flex;
+  align-items: center;
+  padding: 18px 14px 18px 16px;
+}
+.title-section {
+  position: relative;
+}
+.title-section h1 {
+  font-weight: 500;
+}
+.title-section p {
+  position: absolute;
+  left: 96px;
+  top: -5px;
+  color: grey;
+  font-size: 12px;
+}
+.bars {
+  height: 35px;
+  width: 35px;
+  color: gray;
+}
+.icon {
+  color: red;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.header-middle {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 50%;
+} 
+.search-text {
+  padding: 1px;
+  height: 40px;
+  border: 0.5px solid black;
+  border-radius: 20px 0 0 20px;
+}
+.search-icon {
+  font-weight: 100;
+  border: 0.5px solid black;
+  padding: 10px;
+  margin-left: -1px;
+  height: 40px;
+  width: 70px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 0 20px 20px 0 ;
+  color: gray;
+}
+.microphone{
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border: none;
+  margin-left: 14px;
+  border-radius: 50%;
+  background-color: rgb(242, 242, 242);
+}
+.header-right{
+  display: flex;
+  align-items: center;
+}
+.sign-div{
+  display: flex;
+  align-items: center;
+  color: #0067c1;
+  border: 0.5px solid gray;
+  ;
+  font-size: 14px;
+  width: 90px;
+  width: 100px;
+  padding: 6px 8px;
+  border-radius: 20px;
+  margin-left: 25px;
+}
+.user-pic{
+  height: 26px;
+  width: 26px;
+  margin-right: 6px;
 }
