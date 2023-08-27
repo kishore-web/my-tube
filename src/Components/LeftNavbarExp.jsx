@@ -5,7 +5,7 @@ import {MdVideoLibrary, MdOutlineSubscriptions, MdOutlineAppShortcut,MdOutlineHi
 
 const LeftNavbarExp = () => {
   return (
-    <div className='left-bar'>
+    <div className='left-bar box'>
       <ul className='leftbar-container'>
         <li> <div className='nav-icons'><FaHome /> </div> Home</li>
         <li> <div className='nav-icons'><MdOutlineAppShortcut /> </div> Shorts</li>
