@@ -7,16 +7,18 @@
   top: 0;
   z-index: 1000;
   cursor: pointer;
+  background-color: white;
 }
 .header-left {
   align-items: center;
   display: flex;
-  width: 300px;
+
 }
 .icon-section {
   display: flex;
   align-items: center;
   padding: 18px 14px 18px 16px;
+  margin-left: 5px;
 }
 .title-section {
   position: relative;
@@ -32,8 +34,8 @@
   font-size: 12px;
 }
 .bars {
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
   color: gray;
 }
 .icon {
@@ -47,12 +49,17 @@
   flex: 1;
   align-items: center;
   border-radius: 50%;
+  max-width: 650px;
+  margin-left: 70px;
 } 
 .search-text {
-  padding: 1px;
   height: 40px;
+  padding-left: 10px;
   border: 0.5px solid black;
   border-radius: 20px 0 0 20px;
+  width: 80%;
+  font-size: 16px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.15);
 }
 .search-icon {
   font-weight: 100;

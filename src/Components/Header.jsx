@@ -20,7 +20,7 @@ const Header = () => {
         </div>
       </div>
       <div className="header-middle">
-        <input className="search-text" type="text" />
+        <input className="search-text" type="text" placeholder="Search" />
         <FaSearch className="search-icon" />
         <FaMicrophone className="microphone" />
       </div>

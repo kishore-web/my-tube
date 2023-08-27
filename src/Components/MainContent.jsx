@@ -5,7 +5,8 @@ import "../Styles/maincontent.css";
 
 const MainContent = () => {
   return (
-    <div className="content-container box">
+    <div className="video-grid">
+
       <div className="content">
         <div className="thumbnail-div">
           <img
@@ -13,10 +14,11 @@ const MainContent = () => {
             src="../src/Assets/thumb.webp"
             alt="thumbnail"
           />
+          <p className="time-stamp">12:30:24</p>
         </div>
         <div className="video-description">
-          <div className="author-div">
-            <img src="../src/Assets/author-pic.jpeg" alt="author-image" />
+          <div className="channel-picture">
+            <img className="profile-picture" src="../src/Assets/author-pic.jpeg" alt="profile-image" />
           </div>
           <div className="thumbnail-description">
             <div className="thumb-title">

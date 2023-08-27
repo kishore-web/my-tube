@@ -1,0 +1,27 @@
+.left-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 65px;
+  background-color: white;
+  z-index: 200;
+}
+.leftbar-container{
+  overflow-y: scroll;
+  padding: 12px;
+}
+.leftbar-container li{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: rgb(66, 66, 66);
+  font-weight: 400;
+  border-radius: 10px;
+}
+.leftbar-container li:hover{
+  background-color: rgb(239, 239, 239);
+}
+.nav-icons{
+  font-size: 20px;
+  margin-right: 23px;
+}
