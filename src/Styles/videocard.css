@@ -50,17 +50,19 @@
 .channel{
   display: flex;
   align-items: center;
+  gap: 4px;
   color: rgb(89, 87, 87);
   padding: 6px 0;
 }
 .thumb-title{
   font-weight: 500;
+  color: black;
 }
 .views-time{
   display: flex;
   color: rgb(89, 87, 87);
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 
