@@ -10,13 +10,16 @@
 }
 
 .video-description {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
   margin-top: 12px;
+  column-gap: 5px;
 }
 
 .share-section{
   margin-left: auto;
+  color: rgb(42, 42, 42);
+  font-size: 14px;
 }
 .thumbnail-div{
   position: relative;
@@ -40,12 +43,15 @@
   border-radius: 10px;
 }
 .channel-picture{
-  width: 56px;
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
 }
 .profile-picture {
+  object-fit: cover;
   width: 100%;
-  border-radius: 50%;
+  height: 100%;
+  border-radius: 20px;
 }
 .channel{
   display: flex;

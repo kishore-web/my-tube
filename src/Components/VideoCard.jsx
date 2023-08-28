@@ -24,7 +24,7 @@ const VideoCard = ({videoInfo}) => {
         </div>
         <div className="video-description">
           <div className="channel-picture">
-            <img className="profile-picture" src="../src/Assets/author-pic.jpeg" alt="profile-image" />
+            <img className="profile-picture" src={videoInfo?.snippet?.thumbnails?.default?.url} alt="profile-image" />
           </div>
           <div className="thumbnail-description">
             <div className="thumb-title">
