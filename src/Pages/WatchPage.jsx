@@ -1,5 +1,6 @@
 import React from "react";
 import { useSearchParams } from "react-router-dom";
+import Comments from "../Components/Comments";
 import LiveChat from "../Components/LiveChat";
 
 const WatchPage = () => {
@@ -16,6 +17,7 @@ const WatchPage = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
+        <Comments />
       </div>
       <div>
         <LiveChat />
