@@ -10,7 +10,7 @@ const VideoCard = ({videoInfo}) => {
   const isoDuration = videoInfo?.contentDetails?.duration
   const views = Number(videoInfo?.statistics?.viewCount)
   const inputDate = videoInfo?.snippet?.publishedAt
-  console.log(views)
+
   return (
     <div>
       <div className="content">

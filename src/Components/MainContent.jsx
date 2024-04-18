@@ -4,15 +4,13 @@ import "../Styles/maincontent.css";
 import { YOU_TUBE_API } from "../Utils/Constant";
 import { useState } from "react";
 import { useEffect } from "react";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 const MainContent = () => {
   const [videos, setVideos] = useState([]);
   const fetchVideos = async () => {
     const fetchData = await fetch(YOU_TUBE_API);
     const data = await fetchData.json();
-    console.log(data)
     setVideos(data?.items);
-    console.log(data?.items);
   };
   useEffect(() => {
     fetchVideos();

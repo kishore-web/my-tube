@@ -6,12 +6,18 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  cursor: pointer;
   background-color: white;
+}
+.header-profile {
+  width: 40px;
 }
 .header-left {
   align-items: center;
   display: flex;
+}
+.header-link {
+  text-decoration: none;
+  color: inherit;
 }
 .icon-section {
   display: flex;
@@ -49,28 +55,27 @@
   align-items: center;
   border-radius: 50%;
   max-width: 650px;
+  cursor: pointer;
   margin-left: 70px;
 }
 .search-text {
   height: 40px;
-  padding-left: 10px;
-  border: 0.5px solid black;
+  padding-left: 15px;
   border-radius: 20px 0 0 20px;
   width: 80%;
   font-size: 16px;
+  font-weight: normal;
   box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.15);
 }
 .search-icon {
-  font-weight: 100;
-  border: 0.5px solid black;
   padding: 10px;
   margin-left: -1px;
   height: 40px;
   width: 70px;
   background-color: rgb(241, 241, 241);
   border-radius: 0 20px 20px 0;
-  color: gray;
 }
+
 .microphone {
   width: 40px;
   height: 40px;
@@ -86,6 +91,7 @@
 }
 
 .signIn-btn {
+  cursor: pointer;
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -98,12 +104,13 @@
   border-radius: 20px;
   margin-left: 25px;
 }
-.signOut-btn{
+.signOut-btn {
   background-color: transparent;
   border: 0.5px solid gray;
   padding: 6px 8px;
   border-radius: 20px;
   margin-left: 25px;
+  cursor: pointer;
 }
 .user-pic {
   height: 26px;
