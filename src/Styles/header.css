@@ -62,18 +62,27 @@
   height: 40px;
   padding-left: 15px;
   border-radius: 20px 0 0 20px;
+  border: 1px solid rgb(208, 208, 208);
   width: 80%;
   font-size: 16px;
   font-weight: normal;
-  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.15);
+  outline: none;
+  z-index: 2;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.15);
 }
+.search-text:focus {
+  border: 1px solid #3e58d6;
+}
+
 .search-icon {
   padding: 10px;
   margin-left: -1px;
+  border: 1px solid rgb(208, 208, 208);
   height: 40px;
   width: 70px;
   background-color: rgb(241, 241, 241);
   border-radius: 0 20px 20px 0;
+  color: gray;
 }
 
 .microphone {

@@ -5,10 +5,10 @@ import CommentsContainer from "./CommentsContainer";
 const Comments = () => {
   const [explorerData, setExplorerData] = useState(explorer);
   console.log(explorerData);
-  console.log(explorer);
+  // console.log(explorer);
   return (
     <div>
-      <CommentsContainer data={explorerData}/>
+      <CommentsContainer data={explorerData} />
     </div>
   );
 };

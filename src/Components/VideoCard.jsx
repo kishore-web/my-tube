@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
 import "../Styles/videocard.css";
 import { FaEllipsisV } from "react-icons/fa";
 import { VscVerifiedFilled } from "react-icons/vsc";
-import ParseDuration from "./ParseDuration.jsx"
-import {FormatViews, DateDifference} from "./ParseDuration.jsx"
+import ParseDuration from "./ParseDuration.jsx";
+import { FormatViews, DateDifference } from "./ParseDuration.jsx";
 
-const VideoCard = ({videoInfo}) => {
-  console.log(videoInfo)
-  const isoDuration = videoInfo?.contentDetails?.duration
-  const views = Number(videoInfo?.statistics?.viewCount)
-  const inputDate = videoInfo?.snippet?.publishedAt
+const VideoCard = ({ videoInfo }) => {
+  console.log(videoInfo);
+  const isoDuration = videoInfo?.contentDetails?.duration;
+  const views = Number(videoInfo?.statistics?.viewCount);
+  const inputDate = videoInfo?.snippet?.publishedAt;
 
   return (
     <div>
@@ -20,24 +20,37 @@ const VideoCard = ({videoInfo}) => {
             src={videoInfo?.snippet?.thumbnails?.medium?.url}
             alt="thumbnail"
           />
-          <p className="time-stamp"><ParseDuration isoDuration={isoDuration} /> </p>
+          <p className="time-stamp">
+            <ParseDuration isoDuration={isoDuration} />{" "}
+          </p>
         </div>
         <div className="video-description">
           <div className="channel-picture">
-            <img className="profile-picture" src={videoInfo?.snippet?.thumbnails?.default?.url} alt="profile-image" />
+            <img
+              className="profile-picture"
+              src={videoInfo?.snippet?.thumbnails?.default?.url}
+              alt="profile-image"
+            />
           </div>
           <div className="thumbnail-description">
-            <div className="thumb-title">
-              {videoInfo?.snippet?.title}
-            </div>
+            <div className="thumb-title">{videoInfo?.snippet?.title}</div>
             <div className="channel">
               <p>{videoInfo?.snippet.channelTitle}</p>
+              {videoInfo?.contentDetails?.licensedContent ? (
                 <VscVerifiedFilled />
+              ) : (
+                <span></span>
+              )}
             </div>
             <div className="views-time">
-              <span className="views"> <FormatViews views={views} /> views</span>
+              <span className="views">
+                {" "}
+                <FormatViews views={views} /> views
+              </span>
               <span>&#183;</span>
-              <span className="time"><DateDifference inputDate={inputDate} /> ago</span>
+              <span className="time">
+                <DateDifference inputDate={inputDate} /> ago
+              </span>
             </div>
           </div>
           <div className="share-section">
@@ -46,7 +59,7 @@ const VideoCard = ({videoInfo}) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default VideoCard
+export default VideoCard;

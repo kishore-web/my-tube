@@ -20,7 +20,11 @@ const MainContent = () => {
     <div className="video-grid">
       {videos &&
         videos.map((item) => (
-          <Link to={`/watch?v=${item.id}`} key={item.id}>
+          <Link
+            to={`/watch?v=${item.id}`}
+            key={item.id}
+            state={{ videoInfo: item }}
+          >
             <VideoCard videoInfo={item} />
           </Link>
         ))}
